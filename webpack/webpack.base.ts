@@ -1,4 +1,4 @@
-import { EnvironmentPlugin, Configuration } from 'webpack'
+import { Configuration, DefinePlugin } from 'webpack'
 import merge from 'webpack-merge'
 
 import * as path from 'path'
@@ -22,7 +22,9 @@ const config: Configuration = merge(loadersConfig, {
   },
   resolve: { extensions: ['.ts', '.tsx', '.js', '.jsx'], },
   plugins: [
-    new EnvironmentPlugin(Object.keys(envVars)),
+    new DefinePlugin({
+      'process.env': JSON.stringify(envVars)
+    }),
     new ForkTsCheckerWebpackPlugin(),
     new HtmlWebpackPlugin({
       template: './src/index.html',
