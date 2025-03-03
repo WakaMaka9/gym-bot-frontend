@@ -16,7 +16,7 @@ const loadersConfig: Configuration = {
                 use: ['style-loader', 'css-loader'],
             },
             {
-                test: /\.(png|svg|jpe?g|gif)(\?.*)?$/,
+                test: /\.(png|jpe?g|gif)(\?.*)?$/,
                 loader: 'file-loader',
                 options: {
                     outputPath: 'img/',
@@ -33,17 +33,7 @@ const loadersConfig: Configuration = {
             },
             {
                 test: /\.svg$/i,
-                resourceQuery: /url/,
-                loader: 'file-loader',
-                options: {
-                    outputPath: 'img/',
-                    name: '[name].[ext]',
-                },
-            },
-            {
-                test: /\.svg$/i,
                 issuer: /\.[jt]sx?$/,
-                resourceQuery: { not: [/url/] },
                 use: ['@svgr/webpack'],
             },
         ],

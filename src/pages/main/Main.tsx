@@ -1,10 +1,5 @@
-import { Link } from "react-router-dom"
+import { TrainingList } from "@/features/train-list"
 
 export const Main = () => {
-    return (
-        <>
-            <h1>Hello, World</h1>
-            <Link to={'/about'}>Next</Link>
-        </>
-    )
+    return (<TrainingList />)
 }

@@ -27,7 +27,7 @@ const config: Configuration = merge(loadersConfig, {
     }),
     new ForkTsCheckerWebpackPlugin(),
     new HtmlWebpackPlugin({
-      template: './src/index.html',
+      template: './public/index.html',
     }),
   ],
 })

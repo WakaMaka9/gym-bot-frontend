@@ -14,10 +14,10 @@ const config = webpackMerge(baseConfig, {
     port: +envVars.DEV_SERVER_PORT,
     historyApiFallback: true,
     proxy: [
-      // {
-      //   context: ['/api'],
-      //   target: process.env.BACKEND_HOST,
-      // },
+      {
+        context: ['/api'],
+        target: process.env.BACKEND_HOST,
+      },
     ],
   }
 })

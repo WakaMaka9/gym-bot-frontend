@@ -12,5 +12,6 @@ export const envVars = {
     OUTPUT_DIR: process.env.OUTPUT_DIR || 'dist',
     PUBLIC_PATH: process.env.PUBLIC_PATH || '/',
     DEV_SERVER_PORT: process.env.DEV_SERVER_PORT!,
-    DEV_SERVER_HOST: process.env.DEV_SERVER_HOST!
+    DEV_SERVER_HOST: process.env.DEV_SERVER_HOST!,
+    SUBPATH_PREFIX_URL: process.env.SUBPATH_PREFIX_URL!
 }

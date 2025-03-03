@@ -1,0 +1,21 @@
+export const palette = {
+    mainBackground: 'var(--tg-theme-bg-color)',
+    secondBackground: 'var(--tg-theme-secondary-bg-color)',
+    buttonColor: 'var(--tg-theme-button-color)',
+    buttonTextColor: 'var(--tg-theme-button-text-color)',
+    textColor: 'var(--tg-theme-text-color)',
+    gray: 'var(--tg-theme-hint-color)',
+    linkColor: 'var(--tg-theme-link-color)',
+    error: 'var(--tg-theme-destructive-text-color)',
+    borderColor: 'var(--tg-theme-section-separator-color)',
+    sectionHeder: 'var(--tg-theme-section-header-text-color)',
+    accentColor: 'var(--tg-theme-accent-text-color)',
+
+    thirdBackground: '#1C1C1E',
+    white: '#FFF',
+    black: '#22201E',
+    gray20: '#DCDEDD',
+    green: '#40BF40',
+    blue: '#007AFF',
+    // blueOp: '#007AFF1A',
+}
